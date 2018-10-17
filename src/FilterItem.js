@@ -75,6 +75,10 @@ class FilterItem {
     console.log('isRtl enabled', this.isRtlEnabled);
     // Perform a shallow clone of the filtering in css
     let filterInCss = makeShallowClone(cssOptions);
+
+    if(this.isRtlEnabled) {
+      targetPos.left = targetPos.left * -1;
+    }
     // Enhance it with the target position towards which the item should animate
     filterInCss.transform += ' translate3d(' + targetPos.left + 'px,' + targetPos.top + 'px, 0)';
     // Animate

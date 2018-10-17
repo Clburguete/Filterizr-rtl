@@ -1,5 +1,4 @@
-# Filterizr-rtl
-If you use Filterizr in your project and wish to get it featured on Filterizr's website, let me know!
+#Filterizr-rtl
 
 ## Description
 Filterizr-rtl is an iteration over Yiotis Kaltsikis, found in the following link http://yiotis.net/filterizr , made for specific rtl use cases.
@@ -13,7 +12,7 @@ If you want filterizr-rtl to work, the global html object must have direction: '
 ## Browser support
 IE11 and all modern browsers.
 
-## Donate
+## Donate to the original creator - Yiotis Kaltsikis
 Did you enjoy Filterizr? Filterizr is and will always be 100% free, if you would like to show your support feel free to donate:
 * **BTC**: 1JdpKt3aeNQuKF9CrUKeq3XkPswcqgAFpt
 * **ETH**: 0xdb259cf059faf286e5834e95c8f3a973438276e8

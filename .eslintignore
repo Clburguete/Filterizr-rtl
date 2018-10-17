@@ -2,4 +2,3 @@
 /node_modules/*
 /coverage/*
 webpack.config.js
-/src/*

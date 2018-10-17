@@ -72,7 +72,6 @@ class FilterItem {
    * @param {Object} cssOptions for the animation
    */
   filterIn(targetPos, cssOptions) {
-    console.log('isRtl enabled', this.isRtlEnabled);
     // Perform a shallow clone of the filtering in css
     let filterInCss = makeShallowClone(cssOptions);
 

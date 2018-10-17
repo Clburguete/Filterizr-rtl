@@ -41,12 +41,12 @@ class FilterControls {
     });
 
     // Multifilter mode controls
-    $(`${selector}[data-multifilter]`).on('click.Filterizr', (evt) => {
-      const $ctrl        = $(evt.target);
-      const targetFilter = $ctrl.attr('data-multifilter');
+    // $(`${selector}[data-multifilter]`).on('click.Filterizr', (evt) => {
+    //   const $ctrl        = $(evt.target);
+    //   const targetFilter = $ctrl.attr('data-multifilter');
       
-      Filterizr.toggleFilter(targetFilter);
-    });
+    //   Filterizr.toggleFilter(targetFilter);
+    // });
   }
 
   /**

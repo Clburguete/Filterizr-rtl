@@ -66,7 +66,6 @@ class Filterizr {
       FilterContainer,
       FilterItems,
     } = this.props;
-
     // Trigger filteringStart event
     FilterContainer.trigger('filteringStart');
 
@@ -74,6 +73,7 @@ class Filterizr {
     this.props.filterizrState = FILTERIZR_STATE.FILTERING;
 
     // Cast category to string or array of strings
+    if(!category) return;
     category = Array.isArray(category)
       ? category.map(c => c.toString())
       : category.toString();
@@ -295,13 +295,22 @@ class Filterizr {
           if (activeFilters.length === 1) activeFilters = activeFilters[0];
         } else {
           // If the item is not in the array then simply push it
-          activeFilters.push(toggledFilter);
+          if(toggledFilter) {
+            activeFilters.push(toggledFilter);
+          }
         }
       } else {
         activeFilters = activeFilters === toggledFilter
           ? 'all' // If the activeFilters === toggledFilter revert to 'all'
           : [activeFilters, toggledFilter]; // Otherwise start array
       }
+    }
+
+    // control undefined in array
+    if(Array.isArray(activeFilters)) {
+      activeFilters = activeFilters.filter(filter => {
+        return !!filter;
+      });
     }
 
     // Update active filter in Filterizr's options

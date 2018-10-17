@@ -1,7 +1,7 @@
 {
-  "name": "filterizr",
-  "version": "1.3.5",
-  "description": "Filterizr is a jQuery plugin that sorts, shuffles, searches and applies stunning filters over responsive galleries using CSS3 transitions and custom CSS effects",
+  "name": "filterizr-rtl",
+  "version": "1.0.1",
+  "description": "Filterizr-rtl is an iteration over the famous jQuery plugin that sorts, shuffles, searches and applies stunning filters over responsive galleries using CSS3 transitions and custom CSS effects",
   "main": "dist/jquery.filterizr-with-jquery.min.js",
   "scripts": {
     "start": "webpack-dev-server --progress --inline --hot --env.env=development --env.withjquery=true",

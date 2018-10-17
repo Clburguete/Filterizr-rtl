@@ -76,7 +76,7 @@ class FilterItem {
     // Perform a shallow clone of the filtering in css
     let filterInCss = makeShallowClone(cssOptions);
     // Enhance it with the target position towards which the item should animate
-    filterInCss.transform += ' translate3d(' + this.isRtlEnabled ? targetPos.left * -1 : targetPos.left + 'px,' + targetPos.top + 'px, 0)';
+    filterInCss.transform += ' translate3d(' + this.isRtlEnabled ? targetPos.left : targetPos.left + 'px,' + targetPos.top + 'px, 0)';
     // Animate
     this.$node.css(filterInCss);
     // Update last position to be the targetPos
@@ -94,7 +94,7 @@ class FilterItem {
     let filterOutCss = makeShallowClone(cssOptions);
     const { lastPosition } = this.props;
     // Auto add translate to transform over user-defined filterOut styles
-    filterOutCss.transform += ' translate3d(' + this.isRtlEnabled ? lastPosition.left  * -1 : lastPosition.left + 'px,' + lastPosition.top + 'px, 0)';
+    filterOutCss.transform += ' translate3d(' + this.isRtlEnabled ? lastPosition.left : lastPosition.left + 'px,' + lastPosition.top + 'px, 0)';
     // Play animation
     this.$node.css(filterOutCss);
     // Update state

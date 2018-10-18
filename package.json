@@ -1,6 +1,6 @@
 {
   "name": "filterizr-rtl",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Filterizr-rtl is an iteration over the famous jQuery plugin that sorts, shuffles, searches and applies stunning filters over responsive galleries using CSS3 transitions and custom CSS effects",
   "main": "dist/jquery.filterizr-with-jquery.min.js",
   "scripts": {

@@ -4,7 +4,7 @@
  */
 const SameHeightLayout = (Filterizr) => {
   //catch if no matching items
-  if(!Filterizr) return;
+  if(Filterizr === 'undefined') return;
   const {
     FilterContainer,
     FilteredItems,

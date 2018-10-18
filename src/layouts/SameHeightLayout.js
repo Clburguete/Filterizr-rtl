@@ -3,6 +3,8 @@
  * @param {object} Filterizr instance.
  */
 const SameHeightLayout = (Filterizr) => {
+  //catch if no matching items
+  if(!Filterizr) return;
   const {
     FilterContainer,
     FilteredItems,
